@@ -27,8 +27,8 @@ links.forEach((link) =>
     }
   })
 )
-const callMe = document.querySelector('.callme')
-setTimeout(() => {
-  callMe.classList.add('active')
-  console.log('ticktack')
-}, 2000)
+// const callMe = document.querySelector('.callme')
+// setTimeout(() => {
+//   callMe.classList.add('active')
+//   console.log('ticktack')
+// }, 2000)
