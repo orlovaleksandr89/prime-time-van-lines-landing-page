@@ -1,0 +1,26 @@
+@import 'variables';
+
+.about_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+  padding: 5px 20px;
+  @media (max-width: 805px) {
+    padding: 10px 10px;
+  }
+}
+
+.about_us_title {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.text {
+  margin: 15px 0;
+
+  .bold_text {
+    font-weight: bold;
+  }
+}

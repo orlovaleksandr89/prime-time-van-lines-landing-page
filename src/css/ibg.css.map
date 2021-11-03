@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,MAAM;CAI5B;;AAPD,AAIE,IAJE,CAIF,GAAG,CAAC;EACF,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "../../scss/ibg.scss"
+    ],
+    "names": [],
+    "file": "ibg.css"
+}

@@ -1,0 +1,79 @@
+@import 'variables';
+
+.readytomove_container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: $black-color;
+  padding: 20px;
+  @media (max-width: 805px) {
+    flex-direction: column;
+  }
+  @media (max-width: 376px) {
+    padding: 10px;
+  }
+}
+.readytomove_text {
+  font-size: 1.4rem;
+  color: $light-color;
+  width: 50%;
+  text-align: end;
+  padding: 30px;
+  @media (max-width: 805px) {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+}
+.readytomove_phone {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  @media (max-width: 805px) {
+    width: 80%;
+    padding: 5px;
+  }
+  @media (max-width: 376px) {
+    width: 100%;
+  }
+}
+.number_wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $light-color;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: $text-color;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $succes-color;
+    color: $body-color;
+  }
+
+  @media (max-width: 1130px) {
+    width: 70%;
+  }
+  @media (max-width: 805px) {
+    width: 100%;
+  }
+  @media (max-width: 376px) {
+    width: 100%;
+  }
+}
+.number_phone {
+  font-size: 1.4rem;
+  margin: 0 15px;
+}
+.number_icon {
+  height: 100%;
+  img {
+    height: 25px;
+    object-fit: cover;
+  }
+}
