@@ -21,7 +21,7 @@
     top: 0px;
     transform: translate(-75%, 0);
     img {
-      height: 85px;
+      height: 90px;
     }
   }
   @media (max-width: 805px) {
@@ -44,11 +44,12 @@
   }
   &__body {
     &.active {
-      height: 100%;
       z-index: 5;
     }
   }
   &__list {
+    position: relative;
+    top: 30%;
     display: flex;
     font-size: 0;
 
@@ -85,12 +86,11 @@
       padding: 0;
       overflow: auto;
       transform: translate(0px, -100%);
-      transition: all 0.4s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      z-index: 5;
       &.active {
         transform: translate(0);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        z-index: 5;
       }
     }
     &__list {
@@ -154,7 +154,6 @@
         &:last-child {
           transform: rotate(45deg);
           z-index: 5;
-
           bottom: 8px;
         }
       }

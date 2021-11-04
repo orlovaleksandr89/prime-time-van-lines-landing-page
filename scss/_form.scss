@@ -117,6 +117,9 @@
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   transition: all 0.3s ease-in-out;
+  @media (max-width: 805px) {
+    background-color: $succes-color;
+  }
 }
 
 .form__button:hover {

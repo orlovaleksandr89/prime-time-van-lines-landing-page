@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id='home'>
         <div class="header__row">
           <nav class="header__menu menu">
             <div class="menu__icon icon-menu">
@@ -23,7 +23,7 @@
             </div>
             <div class="menu__body">
               <ul class="menu__list">
-                <li><a href="index.html" class="menu__link">Home</a></li>
+                <li><a href="#home" class="menu__link">Home</a></li>
                 <li><a href="#about_us" class="menu__link">About us</a></li>
                 <li><a href="#services" class="menu__link">Services</a></li>
                 <li><a href="#contact_us" class="menu__link">Contact us</a></li>
@@ -31,7 +31,7 @@
             </div>
           </nav>
           <div class="header__logo">
-            <img src="./src/assets/logo.jpg" alt="PrimeTimeLogo" />
+            <img src="./src/assets/sasha.png" alt="PrimeTimeLogo" />
           </div>
         </div>
       </header>
@@ -155,7 +155,7 @@
             <!-- About us block start -->
             <div class="about_us" id="about_us">
               <div class="about_us_title">
-                <h1>Who we are?</h1>
+                <h2>Who we are?</h2>
               </div>
               <div class="about_us_title">
                 <section class="text">
@@ -197,7 +197,7 @@
           <!-- Services block start -->
           <div class="service_container">
             <div class="services_title" id="services">
-              <h1>Our services</h1>
+              <h2>Our services</h2>
             </div>
             <div class="services_wrapper">
 
@@ -211,7 +211,7 @@
                   <div class="services__content">
                     <div class="about_us">
                       <div class="about_us_title">
-                        <h1>Local Moving</h1>
+                        <h2>Local Moving</h2>
                       </div>
                       <div class="about_us_title">
                         <section class="text">
@@ -234,7 +234,7 @@
                   <div class="services__content">
                     <div class="about_us">
                       <div class="about_us_title">
-                        <h1>Long Distance Moving</h1>
+                        <h2>Long Distance Moving</h2>
                       </div>
                       <div class="about_us_title">
                         <section class="text">
@@ -273,7 +273,7 @@
                   <div class="services__content">
                     <div class="about_us">
                       <div class="about_us_title">
-                        <h1>Storage Services</h1>
+                        <h2>Storage Services</h2>
                       </div>
                       <div class="about_us_title">
                         <section class="text">
@@ -296,7 +296,7 @@
                   <div class="services__content">
                     <div class="about_us">
                       <div class="about_us_title">
-                        <h1>Packing Services</h1>
+                        <h2>Packing Services</h2>
                       </div>
                       <div class="about_us_title">
                         <section class="text">
@@ -348,8 +348,9 @@
         <!-- Ready to move end -->
 
         <!-- footer -->
-        <footer class="footer" id='contact_us'>
-          <div class="footer_row">
+        <footer class="footer">
+          <div id='contact_us'>
+           <div class="footer_row">
             <div class="footer_col">
               <div class="footer_col_info">
                 <div class="footer_col_info_logo ">
@@ -383,9 +384,11 @@
                 </div>
               </div>
             </div>
+           </div>
           </div>
-          <div class="footer_row">
-            <div class="footer_rights">
+           
+           <div class="footer_row">
+             <div class="footer_rights">
               <p>&#169 All rights reserved 2021 RedFox</p>
             </div>
             ights
@@ -394,9 +397,13 @@
         <!-- end footer -->
       </main>
     </div>
-    <div class="callme">
-      Call me please
-    </div>
+    <a href="#home">
+    <div class="gotobtn" id="goToHome">
+        <div class="btn_icon">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+      </div>
+    </a>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./scripts/scripts.js"></script>

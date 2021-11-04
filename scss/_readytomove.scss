@@ -60,6 +60,8 @@
     width: 70%;
   }
   @media (max-width: 805px) {
+    background-color: $succes-color;
+    color: $body-color;
     width: 100%;
   }
   @media (max-width: 376px) {
