@@ -9,6 +9,7 @@
 @import 'services';
 @import 'readytomove';
 @import 'footer';
+@import 'slider';
 
 * {
   box-sizing: border-box;
@@ -130,7 +131,7 @@ a {
         padding-bottom: 20px;
         justify-content: center;
         letter-spacing: 0;
-        margin-top: 50px;
+        margin-top: 30px;
         h1 {
           font-size: 2rem;
           text-shadow: 3px 3px $dark-color;
@@ -142,6 +143,7 @@ a {
         justify-content: end;
         letter-spacing: 0;
         padding-bottom: 0;
+        margin-top: 10px;
       }
     }
     &_form {

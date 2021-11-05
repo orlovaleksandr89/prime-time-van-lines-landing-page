@@ -27,33 +27,71 @@ document.addEventListener('DOMContentLoaded', function () {
       formData = { ...formData, [key]: value }
     })
   )
-  function formSend(e) {
-    e.preventDefault()
+  async function formSend(e) {
     let error = formValidated(form)
 
-    if (error === 0) {
-      form.classList.add('_sending')
-      console.log(formData)
-      // let responce = await fetch('sendmail.php', {
-      //   method: 'POST',
-      //   body: formData
-      // })
-      // if (responce.ok) {
-      //   let result = await responce.json()
-      //   alert(result.message)
-      //   formData = {
-      //     movingFrom: '',
-      //     movingTo: '',
-      //     name: '',
-      //     email: '',
-      //     phone: '',
-      //     homeSize: '',
-      //     movingDate: ''
-      //   }
-      // }
-      form.reset()
-    } else {
-      alert('Please fill out all fields')
+    function addMessageResult(message, status = 'success') {
+      const resultMessageDiv = document.createElement('div')
+      resultMessageDiv.className = 'form__item__message'
+      const resultMessage = document.createElement('span')
+      status === 'success'
+        ? (resultMessage.className = 'form__message')
+        : (resultMessage.className = 'form__message__error')
+
+      resultMessage.textContent = message
+      resultMessageDiv.append(resultMessage)
+      return form.appendChild(resultMessageDiv)
+    }
+
+    try {
+      e.preventDefault()
+      if (error === 0) {
+        form.classList.add('_sending')
+        let responce = await fetch(
+          'https://formsubmit.co/ajax/orlovaleksandr89@gmail.com',
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'application/json'
+            },
+            body: JSON.stringify(formData)
+          }
+        )
+
+        if (responce.ok) {
+          let result = await responce.json()
+          addMessageResult(result.message)
+
+          setTimeout(() => {
+            const divToRemove = form.querySelector('.form__item__message')
+            form.removeChild(divToRemove)
+          }, 3000)
+
+          formData = {
+            movingFrom: '',
+            movingTo: '',
+            name: '',
+            email: '',
+            phone: '',
+            homeSize: '',
+            movingDate: ''
+          }
+          form.reset()
+          form.classList.remove('_sending')
+        } else {
+          form.classList.remove('_sending')
+        }
+        return
+      } else {
+        addMessageResult('Please fill out required fields', 'error')
+        setTimeout(() => {
+          const divToRemove = form.querySelector('.form__item__message')
+          form.removeChild(divToRemove)
+        }, 3000)
+      }
+    } catch (error) {
+      console.log(error)
     }
 
     function formValidated(form) {
