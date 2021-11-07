@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
+    <meta
+      name="description"
+      content="Need help with your move? Our professional movers relocate you with no stress. Get your free qoute today"
     />
+    <meta name="keywords" content="moving,packing,storage,movers" />
+    <meta name="robots" content="index" />
+    <meta name="Author" content="Oleksandr Orlov, RedFox" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     />
     <link rel="stylesheet" href="/src/css/style.css" />
-    <title>PrimeTimeVanLines</title>
+    <title>PrimeTimeVanLines moving company</title>
   </head>
   <body>
     <div class="wrapper">
+      <!-- header -->
       <header class="header" id="home">
         <div class="header__row">
           <nav class="header__menu menu">
@@ -42,28 +44,29 @@
         </div>
       </header>
       <main class="page">
-        <!-- header -->
         <!-- end header -->
 
         <!-- main page -->
         <div class="main_screen">
           <div class="main_screen_bg ibg">
-            <img src="./src/assets/mainbg.jpg" alt="mover in front of boxes" />
+            <img src="./src/assets/bg.jpg" alt="mover in front of boxes" />
             <div class="main_screen_cover"></div>
           </div>
           <div class="main_screen_content">
             <div class="main_screen_content_text">
               <h1>Welcome to Prime Time Van Lines</h1>
-              <p>
+              <!-- <p>
                 Making Your Move Quick & Easy. We provide you with quality and
-                professional moving services that eradicate customers’ stress,
-                challenges, and mistakes from your move
-              </p>
+                professional moving services that eradicate customers stress,
+                challenges, and mistakes from your move.
+              </p> -->
             </div>
+
+            <!-- Form start -->
             <div class="main_screen_content_form">
               <div class="form">
                 <form id="form" class="form__body">
-                  <h1 class="form__title">Get your free moving quote</h1>
+                  <span class="form__title">Get Your free moving quote</span>
                   <input
                     type="hidden"
                     name="_subject"
@@ -124,9 +127,7 @@
                     <div class="form__label">What is your home size?</div>
 
                     <select name="homeSize" id="homeSize" class="select">
-                      <option default value="1Bedroom">
-                        Choose your home size
-                      </option>
+                      <option selected value="studio">Studio</option>
                       <option value="1Bedroom">1 Bedroom</option>
                       <option value="2Bedroom">2 Bedroom</option>
                       <option value="3Bedroom">3 Bedroom</option>
@@ -142,7 +143,6 @@
                       name="movingDate"
                       id="movingDate"
                       class="form__input"
-                      placeholder="Moving date"
                     />
                   </div>
                   <div class="form__item">
@@ -154,6 +154,7 @@
                 </form>
               </div>
             </div>
+            <!-- Form end -->
           </div>
         </div>
         <!-- end main page -->
@@ -167,10 +168,10 @@
                 <h2>Who we are?</h2>
               </div>
               <div class="about_us_title">
-                <section class="text">
+                <div class="text">
                   <p>
                     We welcome you to
-                    <span class="bold_text">Prime Time Van Lines </span>, a
+                    <span class="bold_text">Prime Time Van Lines</span>, a
                     reliable moving company that is widely known for quality
                     residential and commercial moving services. The company is
                     owned and operated by professional movers who are committed
@@ -179,8 +180,8 @@
                     experience, and they will put it into work to see that
                     customers are well satisfied.
                   </p>
-                </section>
-                <section class="text">
+                </div>
+                <div class="text">
                   <p>
                     Our professionalism, commitment, dedication, courtesy and as
                     well as acceptable moving consultancy service are the
@@ -188,16 +189,16 @@
                     sure we only hands-off customers’ relocation job when they
                     are 100% satisfied.
                   </p>
-                </section>
-                <section class="text">
+                </div>
+                <div class="text">
                   <p>
                     <span class="bold_text"> Prime Time Van Lines</span> boasts
                     of providing the best moving services that are required of a
                     professional moving company to its customers in Las Vegas,
                     and their environs. We have enough equipment and labor
-                    forces to meet the relocation demands of all West Coast .
+                    forces to meet the relocation demands of all West Coast.
                   </p>
-                </section>
+                </div>
               </div>
             </div>
             <!-- About us block end -->
@@ -209,7 +210,7 @@
               <h2>Our services</h2>
             </div>
             <div class="services_wrapper">
-              <section class="services">
+              <div class="services">
                 <div class="services__row reverse">
                   <div class="services__column services__column_img ibg">
                     <img src="./src/assets/moving.png" alt="local moving" />
@@ -221,7 +222,7 @@
                           <h2>Local Moving</h2>
                         </div>
                         <div class="about_us_title">
-                          <section class="text">
+                          <div class="text">
                             <p>
                               <span class="bold_text"
                                 >Prime Time Van Lines
@@ -229,15 +230,15 @@
                               always ready to help you with your moving at any
                               time in Las Vegas.
                             </p>
-                          </section>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
+              </div>
 
-              <section class="services">
+              <div class="services">
                 <div class="services__row">
                   <div class="services__column">
                     <div class="services__content">
@@ -246,7 +247,7 @@
                           <h2>Long Distance Moving</h2>
                         </div>
                         <div class="about_us_title">
-                          <section class="text">
+                          <div class="text">
                             <p>
                               Our long-distance movers are equipped to pack,
                               load, and deliver your items with superior care
@@ -261,7 +262,7 @@
                               </span>
                               is licensed and insured.
                             </p>
-                          </section>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -273,9 +274,9 @@
                     />
                   </div>
                 </div>
-              </section>
+              </div>
 
-              <section class="services">
+              <div class="services">
                 <div class="services__row reverse">
                   <div class="services__column services__column_img ibg">
                     <img src="./src/assets/storage.png" alt="storage" />
@@ -287,21 +288,21 @@
                           <h2>Storage Services</h2>
                         </div>
                         <div class="about_us_title">
-                          <section class="text">
+                          <div class="text">
                             <p>
                               If you are planning a move and your home is not
                               ready yet, what do you do? Ask about storage
                               services in our local storage warehouse keep your
                               household.
                             </p>
-                          </section>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
-              <section class="services">
+              </div>
+              <div class="services">
                 <div class="services__row">
                   <div class="services__column">
                     <div class="services__content">
@@ -310,7 +311,7 @@
                           <h2>Packing Services</h2>
                         </div>
                         <div class="about_us_title">
-                          <section class="text">
+                          <div class="text">
                             <p>
                               Packing is one of the most vital tasks when
                               moving.You will be avoiding damages to one of your
@@ -325,7 +326,7 @@
                               are equipped with expertise and equipment to get
                               it done for you.
                             </p>
-                          </section>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -334,7 +335,7 @@
                     <img src="./src/assets/packing.png" alt="Packing" />
                   </div>
                 </div>
-              </section>
+              </div>
             </div>
           </div>
           <!-- Services block end -->
@@ -445,10 +446,8 @@
               data-bs-target="#carouselExampleInterval"
               data-bs-slide="prev"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+              <i class="fas fa-chevron-left fa-2x"></i>
+
               <span class="visually-hidden">Previous</span>
             </button>
             <button
@@ -457,10 +456,8 @@
               data-bs-target="#carouselExampleInterval"
               data-bs-slide="next"
             >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+              <i class="fas fa-chevron-right fa-2x"></i>
+
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -479,7 +476,7 @@
                   <img src="./src/assets/telephone-forward.svg" alt="phone" />
                 </div>
                 <div class="number_phone">
-                  <h3>+17022011737</h3>
+                  <h3>+1 702-201-1737</h3>
                 </div>
               </div>
             </a>
@@ -518,9 +515,18 @@
                 <div class="footer_col_info">
                   <div class="footer_col_info_dot">
                     <h3>Working Hours</h3>
-                    <p>Mon - Fri: 8am - 8pm</p>
-                    <p>Saturday: 9am - 7pm</p>
-                    <p>Sunday: 9am - 7pm</p>
+                    <div class="footer_col_info_time_wrapper">
+                      <div class="footer_col_info_days">
+                        <p>Mon - Fri</p>
+                        <p>Saturday</p>
+                        <p>Sunday</p>
+                      </div>
+                      <div class="footer_col_info_time">
+                        <p>: 8am - 8pm</p>
+                        <p>: 9am - 7pm</p>
+                        <p>: 9am - 7pm</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

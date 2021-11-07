@@ -12,7 +12,7 @@
 .footer_row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   padding: 15px;
   width: 100%;
@@ -75,4 +75,12 @@
 
   font-size: 1rem;
   color: $text-color;
+}
+.footer_col_info_time_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.footer_col_info_days {
+  text-align: start;
+  margin-right: 10px;
 }

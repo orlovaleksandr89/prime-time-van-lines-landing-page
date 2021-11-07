@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
           setTimeout(() => {
             const divToRemove = form.querySelector('.form__item__message')
             form.removeChild(divToRemove)
-          }, 3000)
+          }, 7000)
 
           formData = {
             movingFrom: '',
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => {
           const divToRemove = form.querySelector('.form__item__message')
           form.removeChild(divToRemove)
-        }, 3000)
+        }, 7000)
       }
     } catch (error) {
       console.log(error)
