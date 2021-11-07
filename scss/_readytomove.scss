@@ -49,10 +49,12 @@
   width: 50%;
   border-radius: 10px;
   padding: 10px 20px;
-  color: $text-color;
+  color: $body-color;
   transition: all 0.3s ease-in-out;
+  background-color: $maingreen-color;
+
   &:hover {
-    background-color: $succes-color;
+    background-color: $maingreen-color;
     color: $body-color;
   }
 
@@ -60,8 +62,8 @@
     width: 70%;
   }
   @media (max-width: 805px) {
-    background-color: $succes-color;
-    color: $body-color;
+    background-color: $maingreen-color;
+    color: $light-color;
     width: 100%;
   }
   @media (max-width: 376px) {

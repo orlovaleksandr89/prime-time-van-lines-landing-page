@@ -84,6 +84,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         return
       } else {
+        const messageDiv = form.querySelector('.form__item__message')
+        if (messageDiv) {
+          form.removeChild(messageDiv)
+        }
         addMessageResult('Please fill out required fields', 'error')
         setTimeout(() => {
           const divToRemove = form.querySelector('.form__item__message')
